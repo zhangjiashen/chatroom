@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans')
+    link(rel='stylesheet', href='/stylesheets/style.css')   
+    script(src='//code.jquery.com/jquery-1.11.0.min.js')
+    script(src='/javascripts/register.js')
+    title ChatRoom Register
+  body
+    h1 ChatRoom Register
+    p(style="color:red;") #{message}
+    #content
+      form(method="post").block
+        input(type="text" name="username" placeholder="Your Username")#username
+        br
+        input(type="password" name="password" placeholder="Your Password")#password
+        br
+        input(type="password" name="passwordConfirm" placeholder="Your Password Again")#passwordConfirm
+        br
+        input(type="submit" name="register", value="register")#register1
+        br
+        input(type="button" name="login" value="login")#login1
